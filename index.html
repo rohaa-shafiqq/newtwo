@@ -1,0 +1,467 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style> 
+      button{
+         background-color: white;
+         color: black;
+         padding: 5px 20px;
+      }
+      .topnav a {
+  
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+h1,div{
+   display: inline-block;
+}
+    </style>
+</head>
+<body>
+   <div>
+<h1>THE NORTH POLE</h1>
+<span class="topnav">
+   <a href="#">Home</a>
+   <a href="#">About</a>
+   <a href="#">Link</a>
+   <a href="#">Link</a>
+</span>
+ 
+<button>Search...<i class="fa-solid fa-magnifying-glass"></i></button>
+<div>log In <i class="fa-solid fa-user"></i></div>
+<div><i class="fa-solid fa-cart-shopping"></i></i>0</div>
+   </div> 
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NORTH POLE</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style> 
+      body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+      }
+      .header {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 20px;
+         background-color: #f2f2f2;
+      }
+      .header h1 {
+         margin: 0;
+      }
+      .topnav {
+         display: flex;
+         gap: 15px;
+      }
+      .topnav a {
+         color: black;
+         text-decoration: none;
+         padding: 10px 15px;
+         border-radius: 4px;
+         transition: background-color 0.3s ease;
+      }
+      .topnav a:hover {
+         background-color: #ddd;
+      }
+      button {
+         background-color: white;
+         color: black;
+         padding: 5px 20px;
+         border: none;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         gap: 5px;
+      }
+      .header div {
+         display: flex;
+         align-items: center;
+         gap: 20px;
+      }
+    </style>
+</head>
+<body>
+   <div class="header">
+      <h1>THE NORTH POLE</h1>
+      
+      <div class="topnav">
+         <a href="#">Home</a>
+         <a href="#">About</a>
+         <a href="#">Services</a>
+         <a href="#">Contact</a>
+      </div>
+      
+      <div>
+         <button>Search <i class="fa-solid fa-magnifying-glass"></i></button>
+         <div>Log In <i class="fa-solid fa-user"></i></div>
+         <div><i class="fa-solid fa-cart-shopping"></i> 0</div>
+      </div>
+   </div> 
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NORTH POLE</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style> 
+      body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: black;
+         color: white;
+      }
+      .header {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 20px;
+         background-color: black;
+         color: white;
+         
+         
+      }
+      .header h1 {
+         margin: 0;
+      }
+      .topnav {
+         display: flex;
+         gap: 15px;
+         float: right;
+      }
+      .topnav a {
+         color: white;
+         text-decoration: none;
+         padding: 10px 15px;
+         border-radius: 4px;
+         transition: background-color 0.3s ease;
+      }
+      .topnav a:hover {
+         background-color: white;
+         color: black;
+      }
+      .search-container {
+         position: relative;
+         display: flex;
+         align-items: center;
+      }
+      .search-container input[type="text"] {
+         padding: 5px 35px 5px 10px;
+         border: 1px solid #ccc;
+         border-radius: 20px;
+         outline: none;
+      }
+       .search-container .fa-magnifying-glass {
+         position: absolute;
+         right: 10px;
+         color: #333;
+      
+      }
+      .header div {
+         display: flex;
+         align-items: center;
+         gap: 20px;
+      }
+      .background-section {
+      position: relative;
+      background-image: url('bags.webp'); 
+      background-size: cover;
+      background-position: center;
+      height: 100vh; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+   }
+
+
+   .content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      padding: 20px;
+   }
+
+   .content h1 {
+      font-size: 80PX;
+      margin-bottom: 30px;
+      margin-top: 80PX;
+   }
+
+
+div.box1{
+   width: 50%;
+   height: 90vh;
+   
+   background-color: black;
+   color: white;
+   text-align: center;
+   font-size: 40px;
+   display: inline-block
+   
+   
+
+}
+   .box2{
+      width: 49%;
+   height: 90vh;
+   
+
+   
+float: right;
+   }
+button{
+   border: solid 2px white;
+   background-color: black;
+   color: white;
+   padding: 10px 40px;
+   font-size: 20px;
+   
+}
+button:hover{
+   background-color: white;
+   color: black;
+}
+.box2 img{width: 100%;
+   height: 90vh;
+}
+.three img{width: 33%;
+   height: 70vh
+   ;
+}
+ .sale{
+   text-align: center;
+   margin-top: 20px;
+   font-size: 30px;
+   
+ }  
+.oldprice{
+   text-decoration: line-through;
+}
+.newprice{
+margin-left: 10px;
+}
+
+.card1,.card2,.card3{
+   width: 32%;
+   display: inline-block;
+}
+p{
+   font-size: 15px;
+
+}
+.box2 img{
+   width: 100%;
+   height: 90vh;
+}
+.box1 p{
+   font-size: 30px;
+   padding: 10px 30px;
+   text-align: justify;
+}
+.form{
+   padding: 60px;
+   
+}
+ .box3 input,textarea{
+   width: 60%;
+   padding: 10px;
+   border: 1px solid blanchedalmond;
+   background-color: black;
+color: white;
+box-sizing: border-box;
+}
+.box3{
+   height: 100vh;
+   width: 48%;
+   display: inline-block;
+   padding: 40px;
+   box-sizing: border-box;
+   font-size: 20px;
+   
+}
+.box4{
+   font-size: 35px;
+   width: 48%;
+   height: 100vh;
+   padding: 30px;
+   box-sizing: border-box; 
+   
+   display:inline-block;
+}
+.box4 p{
+
+   font-size:35px ;
+ text-align: center;
+ 
+}
+.mail{
+   text-align: center;
+   font-size: 30px;
+   
+}
+.mail p{
+   font-size: 25px;
+}
+.mail input{
+   padding: 5px 80px;
+   background-color: black;
+}
+.mail button{
+   padding:5px 80px ;
+}
+.end{
+   padding: 60px  20px;
+   background-color: rgb(20, 16, 16);
+}
+   </style>
+</head>
+<body>
+   <div class="header">
+      <h1>THE NORTH POLE</h1>
+      
+      <div class="topnav">
+         <a href="#">Home</a>
+         <a href="#">About</a>
+         <a href="#">Services</a>
+         <a href="#">Contact</a>
+      </div>
+      
+      <div>
+         <div class="search-container">
+            <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
+         </div>
+         <div>Log In <i class="fa-solid fa-user"></i></div>
+         <div><i class="fa-solid fa-cart-shopping"></i> 0</div>
+      </div>
+   </div> 
+
+<div class="background-section">
+
+   
+   <div class="content">
+      <h1>PLAN YOUR ADVENTURE</h1>
+<button class="bt">SHOP NOW</button>
+   </div>
+</div> 
+
+<div class="box1"><h1>NEW <br>ARRIVALS</h1>
+<button>SHOP NOW</button></div>
+<div class="box2">
+   <img src="bag2.webp" alt="scarfs" >
+   
+</div>
+<div class="three">
+   <img src="duffle bag.jpg" alt="scarfs" >
+   <img src="bagpack.jpg" alt="scarfs" >
+   <img src="bagpackk.jpg" alt="scarfs" >
+  
+</div>
+<div class="sale"><h1>NOW ON SALE </h1>
+<H3>UPTO 50% OFF</H3>
+
+<div class="card1"><img src="bag1.webp" alt="bag" >
+<h5>CANVAS BACKPACK<br></h5>
+<p><span class="oldprice">$75.00  </span>
+   <span class="newprice">$60.00</span><br><br>
+<button>VIEW DETAILS</button>
+</p></div>
+<div class="card2"><img src="baag2.webp" alt="bag" >
+   <h5>CANVAS BACKPACK<br></h5>
+   <p><span class="oldprice">$75.00  </span>
+       <span class="newprice">$60.00</span><br><br>
+   <button>VIEW DETAILS</button>
+   </p></div>
+   <div class="card3"><img src="bag3.webp" alt="bag" >
+      <h5>CANVAS BACKPACK<br></h5>
+      <p><span class="oldprice">$75.00  </span> 
+         <span class="newprice">$60.00</span><br><br>
+      <button>VIEW DETAILS</button>
+      </p></div>
+        <br><br><br> 
+</div>
+<div class="box1">
+   <h4>ABOUT US</h4>
+   <p>"Welcome to our collection of stylish, high-quality bags and backpacks! I’m Roha Shafiq, and I started this journey to bring together bags that balance durability with a modern look, perfect for everyday use and travel adventures. With each design, I focus on providing functionality without compromising on style. Thank you for visiting—I hope you find the perfect companion for all your journeys here!"
+
+      </p>
+</div>
+<div class="box2">   <img src="girly.jpg" alt="scarfs">
+</div>
+<br><br><br>
+<div class="box3">
+<div >
+   <form>
+      
+         <label for="first_name">First Name:</label><br>
+
+         <input type="text" id="first_name" name="first_name" required><br><br>
+         <label for="last_name">Last Name:</label>
+         <br>
+         <input type="text" id="last_name" name="last_name" required><br><br>
+         
+
+         <label for="email">Email:</label><br>
+         <input type="email" id="email" name="email" required><br><br>
+         
+         <label for="subject">Subject:</label><br>
+         <input type="text" id="subject" name="subject" required><br><br>
+         
+         <label for="message">Message:</label><br>
+         <textarea id="message" name="message" rows="6" required></textarea><br><br>
+         
+         <button type="submit">Send</button>
+       </form>
+       
+   
+</div></div>
+<div class="box4"><h1>CONTACT US</h1>
+<P>"We’d love to hear from you! For any inquiries, questions, or to place an order, please fill out the form below. Our team will get back to you as soon as possible to ensure you have the best experience with us. Let us know how we can help make your purchase easy and enjoyable!"
+
+</P></div>
+<div class="mail">
+   <h2>JOIN OUR MAILING<br>LIST</h2>
+   <h4>NEVER MISS AN UPDATE</h4>
+   <P>ENTER YOUR EMAIL HERE:<br>
+      <input type="email" name="email" ><br><br>
+   <input type="checkbox" name="checkbox">Yes,Subscribe me to Newsletter<br><br>
+      <button>SUBSCRIBE NOW</button>
+   </P>
+</div>
+<div class="end">
+   
+   POWERED AND SECURED BY ROHA
+   <div class="topnav">
+      <a href="#">FAQ</a>
+      <a href="#">GROUPS</a>
+      <a href="#">SHIPPING AND RETURN</a>
+      <a href="#">TERMS AND CONDITON</a>
+   </div>
+
+</div>
+</body>
+</html>
